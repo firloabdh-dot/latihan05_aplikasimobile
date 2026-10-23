@@ -20,10 +20,12 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.dark,
-      home: const MyHomePage(),
+      // Halaman awal diarahkan ke ProfilePage
+      home: const ProfilePage(),
     );
   }
 }
+
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -36,7 +38,6 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: const Color(0xFF790D16),
         foregroundColor: Colors.white,
       ),
-
       body: const Center(
         child: Text(
           'Firlo Abdul Fatur',
@@ -44,6 +45,30 @@ class MyHomePage extends StatelessWidget {
             fontSize: 24,
             fontWeight: FontWeight.bold,
             color: Color(0xFF790D16),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Halaman Profil'),
+        backgroundColor: const Color(0xFF790D16),
+        foregroundColor: Colors.white,
+      ),
+      body: const Center(
+        child: Text(
+          'Profil: Firlo Abdul Fatur',
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ),
