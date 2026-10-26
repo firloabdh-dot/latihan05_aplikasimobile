@@ -81,6 +81,20 @@ class ProfilePage extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
             ),
+            Text(
+              'Nim : 1124160119',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            Text(
+              'Kelas : Ti 24 Se 1',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w600
+              ),
+            ),
           ],
         ),
       ),
